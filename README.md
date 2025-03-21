@@ -7,18 +7,8 @@ OBSERVATION REPORT:
 * Cognitive Complexity for Calculate = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = 14
 
 
-Informal Review of the Code:
-
-- General Observations ->
-The code is a basic calculator implementation that parses and evaluates arithmetic expressions.
-It uses nested classes and static methods to perform operations.
-The code handles basic arithmetic operations: addition, subtraction, multiplication, and division.
-- Positive Aspects ->
-Modular Design: The code is divided into methods (evaluateExpression and Calculate), which makes it easier to understand and maintain.
-Use of Constants: The arithmetic operation symbols are defined as constants in the Operations class, which improves readability and maintainability.
-Error Handling: The code includes error handling for parsing numbers, returning "ERROR" if parsing fails.
-- Specific Suggestions ->
-Refactor Calculate Method: Reduce code duplication by creating helper methods for each operation.
-Improve Naming Conventions: Rename ToString to toString.
-Use Constants for Magic Numbers: Define a constant for 0 used in the expression expression = 0 + expression;.
-Add More Comments: Add comments to explain the purpose and logic of each method and block of code.
+1. Calculator.java - Linia de cod 18 - Metoda ToString() ar trebui sa urmeze Java naming convention si ar trebui scris toString()
+2. 4. Calculator.Java - Linia de cod 34 - "0 in expression = 0 + expression;" ar trebui sa fie o constanta
+3. Calculator.java - Linia de cod 63 - In metoda evaluateExpression catch block va returna "ERROR". Ar fi mai bine sa inregistram exceptia in scop de debugging.
+4. Calculator.java - Linia de cod 69 - Metoda Calculate are blocuri de cod repetitive pentru gestionarea diferitelor operațiuni. Acestea pot fi refactorizate pentru a reduce redundanța.
+5. Calculator.java - Linia de cod 77 - Ar trebui evitata utilizarea variabilelor statice precum finalResult daca nu este absolut necesar. In schimb, putem lua in considerare returnarea rezultatului direct din metoda.
