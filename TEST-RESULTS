@@ -1,3 +1,5 @@
+BLACK BOX TESTING:
+
     Test Case 1: Simple Addition
         Input: "1+1"
         Expected Output: "2.0"
@@ -47,3 +49,7 @@
         Input: "abc+1"
         Expected Output: "ERROR"
         Actual result: as expected
+
+
+UNIT TESTING:
+    
