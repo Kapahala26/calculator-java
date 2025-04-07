@@ -1,0 +1,49 @@
+    Test Case 1: Simple Addition
+        Input: "1+1"
+        Expected Output: "2.0"
+        Actual result: as expected
+
+    Test Case 2: Simple Subtraction
+        Input: "5-3"
+        Expected Output: "2.0"
+        Actual result: as expected
+
+    Test Case 3: Simple Multiplication
+        Input: "2*3"
+        Expected Output: "6.0"
+        Actual result: as expected
+
+    Test Case 4: Simple Division
+        Input: "6/2"
+        Expected Output: "3.0"
+        Actual result: as expected
+
+    Test Case 5: Combination of Operations
+        Input: "2+3*4"
+        Expected Output: "14.0" (Multiplication should be performed before addition)
+        Actual result: as expected
+
+    Test Case 6: Combination with Parentheses
+        Input: "2*(3+4)"
+        Expected Output: "14.0" (Parentheses should be evaluated first)
+        Actual Result: ERROR
+
+    Test Case 7: Division by Zero
+        Input: "4/0"
+        Expected Output: "Infinity" or an error message
+        Actual result: as expected
+
+    Test Case 8: Leading Negative Sign
+        Input: "-5+3"
+        Expected Output: "-2.0"
+        Actual result: as expected
+
+    Test Case 9: Handling Infinity
+        Input: "Infinity+1"
+        Expected Output: "Infinity"
+        Actual result: as expected
+
+    Test Case 10: Invalid Input
+        Input: "abc+1"
+        Expected Output: "ERROR"
+        Actual result: as expected
