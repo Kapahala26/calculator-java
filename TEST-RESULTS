@@ -52,4 +52,14 @@ BLACK BOX TESTING:
 
 
 UNIT TESTING:
-    
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class CalculatorTest {
+
+    @Test
+    public void testBasicAddition() {
+        assertEquals("5.0", Calculator.Run("2+3"));
+    }
+
+OK (1 test)
